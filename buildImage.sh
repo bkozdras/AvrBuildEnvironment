@@ -12,7 +12,7 @@ echo "Checking docker availability..."
 if ! docker -v &> /dev/null
 then
     echo "Docker is not found!"
-    echo "WSL: Install Docker Desktop from https://www.docker.com/products/docker-desktop"
+    echo "WSL: Install and/or run Docker Desktop from https://www.docker.com/products/docker-desktop"
     echo "Ubuntu standalone: use sudo apt-get install docker"
     exit -1
 fi
@@ -36,6 +36,6 @@ $(set -x && docker \
     --tag $IMAGE_TAG_NAME:latest \
     .)
 
-echo "Docked building is finished. See log output to check if succeeded!"
+echo "Docker building is finished. See log output to check if succeeded!"
 
 exit 0

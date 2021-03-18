@@ -53,9 +53,11 @@ RUN \
         gcc-$GCC_MAJOR_VERSION                    \
         g++-$GCC_MAJOR_VERSION                    \
         make                                      \
+        ninja-build                               \
         wget                                      \
         pod2pdf                                   \
         git                                       \
+        doxygen                                   \
     && apt-get autoremove -y
 # END: INSTALL PREREQUISITES                        #
 #***************************************************#
