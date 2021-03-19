@@ -57,6 +57,7 @@ enable_language(C)
 
 include(cmake/InitializeSdk.cmake)
 
+include_directories(include)
 add_subdirectory(src)
 if (TESTING_ENABLED)
     enable_testing()

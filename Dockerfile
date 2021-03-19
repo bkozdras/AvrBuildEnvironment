@@ -58,6 +58,7 @@ RUN \
         pod2pdf                                   \
         git                                       \
         doxygen                                   \
+        vim                                       \
     && apt-get autoremove -y
 # END: INSTALL PREREQUISITES                        #
 #***************************************************#
