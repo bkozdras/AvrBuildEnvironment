@@ -195,9 +195,3 @@ RUN \
         pod2pdf
 # END: REMOVE BUILD ARTIFACTS           #
 #***************************************#
-
-WORKDIR /workspace
-SHELL ["/bin/bash", "-c"]
-ADD ./config/bashrc.sh /workspace/shellconfig/
-CMD /bin/bash -i "source /workspace/shellconfig/bashrc.sh"
-ENV TERM xterm-256color
