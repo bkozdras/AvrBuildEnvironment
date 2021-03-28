@@ -34,7 +34,7 @@ echo "WORKSPACE_DIR=$WORKSPACE_DIR"
     -ti \
     -e TERM=xterm-256color \
     -p 5000:80 \
-    -v $WORKSPACE_DIR:/workspace/mounted_volume \
+    -v $WORKSPACE_DIR:/workspace \
     $IMAGE_TAG_NAME \
     /bin/bash -l)
 
