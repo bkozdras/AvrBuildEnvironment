@@ -22,7 +22,7 @@ echo "docker is available!"
 DOCKER_BUILDKIT=1
 CURRENT_DIR=$(pwd)
 NUMBER_OF_CPUS=$(grep -c ^processor /proc/cpuinfo)
-IMAGE_TAG_NAME="bkozdras/avr-build-environment"
+IMAGE_TAG_NAME="bkozdras/avr-build-env"
 
 echo "CURRENT_DIR=$CURRENT_DIR"
 echo "NUMBER_OF_CPUS=$NUMBER_OF_CPUS"

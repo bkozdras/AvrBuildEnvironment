@@ -110,6 +110,16 @@ RUN \
 # END: BUILD AND INSTALL BINUTILS                                              #
 #******************************************************************************#
 
+#******************************************************************************#
+# BEGIN: REPLACING ORIGINAL AVR-SIZE WITH CUSTOM ATMEL VERSION                 #
+RUN \
+    apt-get install binutils-avr -y --no-install-recommends \
+    && rm $AVR_BIN_PATH/avr-size                            \
+    && cp /usr/bin/avr-size $AVR_BIN_PATH/                  \
+    && apt remove binutils-avr -y
+# END: REPLACING ORIGINAL AVR-SIZE WITH CUSTOM ATMEL VERSION                   #
+#******************************************************************************#
+
 #*********************************************************************************#
 # Building and installing requested cmake                                         #
 # BEGIN: BUILD AND INSTALL CMAKE                                                  #
