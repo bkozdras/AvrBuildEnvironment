@@ -59,6 +59,7 @@ RUN \
         git                                       \
         doxygen                                   \
         vim                                       \
+        lcov                                      \
     && apt-get autoremove -y
 # END: INSTALL PREREQUISITES                        #
 #***************************************************#
