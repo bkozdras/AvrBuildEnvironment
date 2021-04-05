@@ -15,7 +15,7 @@ then
     exit -1
 fi
 
-IMAGE_TAG_NAME="bkozdras/avr-build-env:latest"
+IMAGE_TAG_NAME="nemuuser/avr-build-env:latest"
 echo "IMAGE_TAG_NAME=$IMAGE_TAG_NAME"
 
 if [[ "$(! docker images -q $IMAGE_TAG_NAME 2> /dev/null)" == "" ]]; then
