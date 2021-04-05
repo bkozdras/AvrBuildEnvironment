@@ -212,6 +212,7 @@ RUN \
         doxygen                                   \
         vim                                       \
         lcov                                      \
+        python3-pip                               \
     && apt-get autoremove -y
 # END: INSTALL UTILITIES                            #
 #***************************************************#
