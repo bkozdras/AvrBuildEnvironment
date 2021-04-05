@@ -206,6 +206,7 @@ RUN \
 #***************************************************#
 # Install utilities used inside container           #
 # BEGIN: INSTALL UTILITIES                          #
+ENV PATH=$PATH:/root/.local/bin
 RUN \
     apt-get install -y --no-install-recommends    \
         git                                       \
