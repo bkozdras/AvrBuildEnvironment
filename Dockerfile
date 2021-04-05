@@ -56,10 +56,6 @@ RUN \
         ninja-build                               \
         wget                                      \
         pod2pdf                                   \
-        git                                       \
-        doxygen                                   \
-        vim                                       \
-        lcov                                      \
     && apt-get autoremove -y
 # END: INSTALL PREREQUISITES                        #
 #***************************************************#
@@ -206,3 +202,16 @@ RUN \
         pod2pdf
 # END: REMOVE BUILD ARTIFACTS           #
 #***************************************#
+
+#***************************************************#
+# Install utilities used inside container           #
+# BEGIN: INSTALL UTILITIES                          #
+RUN \
+    apt-get install -y --no-install-recommends    \
+        git                                       \
+        doxygen                                   \
+        vim                                       \
+        lcov                                      \
+    && apt-get autoremove -y
+# END: INSTALL UTILITIES                            #
+#***************************************************#
