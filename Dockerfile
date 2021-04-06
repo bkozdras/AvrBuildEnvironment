@@ -217,3 +217,5 @@ RUN \
     && apt-get autoremove -y
 # END: INSTALL UTILITIES                            #
 #***************************************************#
+
+ENV AVR_BUILD_ENVIRONMENT_CONTAINER=1
