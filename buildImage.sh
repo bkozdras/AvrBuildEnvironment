@@ -37,6 +37,9 @@ $(set -x && docker \
     --rm=true \
     .)
 
+docker rmi  $(docker images -f "dangling=true" -q) || echo "No dangling docker images to delete"
+docker images --all
+
 echo "Docker building is finished. See log output to check if succeeded!"
 
 exit 0
